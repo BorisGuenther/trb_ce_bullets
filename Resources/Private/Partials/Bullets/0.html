@@ -1,0 +1,7 @@
+{namespace trb = TRB\TrbBasicsViewhelper\ViewHelpers}
+<trb:content.header data="{data}" />
+<ul class="fa-ul">
+	<f:for each="{data.tx_trb_ce_bullets}" as="row">
+		<li><i class="fa-li fa {row.icon}"></i>{row.text}</li>
+	</f:for>
+</ul>

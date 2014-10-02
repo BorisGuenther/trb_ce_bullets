@@ -1,0 +1,16 @@
+plugin.tx_trbcebullets {
+	view {
+		templateRootPath = {$plugin.tx_trbcebullets.view.templateRootPath}
+		partialRootPath = {$plugin.tx_trbcebullets.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_trbcebullets.view.layoutRootPath}
+	}
+}
+
+tt_content.bullets >
+tt_content.bullets = USER
+tt_content.bullets {
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+	vendorName = TRB
+	extensionName = TrbCeBullets
+	pluginName = bullets
+}
